@@ -1,0 +1,71 @@
+.register {
+  height: 100vh;
+  display: grid;
+  place-items:center ;
+  width: 100vw;
+
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.lContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 22rem;
+}
+.lContainer > * {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.flex div{
+  width: 150px;
+}
+
+.linput {
+  height: 20px;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.lbtn {
+  border: none;
+  padding: 0.625rem;
+  margin-top: 1rem;
+  background-color: #0071c2;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 106%;
+  display: block;
+  font-size: 16px;
+}
+
+.lbtn:hover {
+  background-color: #005baa;
+  transition: 0.3s ease-in-out;
+}
+
+.lbtn:disabled {
+  background-color: #0071c28c;
+  cursor: not-allowed;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+}
