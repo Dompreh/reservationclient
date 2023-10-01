@@ -25,7 +25,7 @@ function Register() {
     dispatch({ type: "REGISTER_START" });
     try {
       if (password === confirmPassword) {
-        const res = await axios.post("/auth/register", {
+        const res = await axios.post("https://reservationapi.onrender.com/auth/register", {
           username,
           email,
           city,
