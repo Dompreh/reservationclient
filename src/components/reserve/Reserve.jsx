@@ -8,7 +8,7 @@ import axios from 'axios'
 import { useNavigate } from "react-router-dom";
 
 function Reserve({ setOpen, hotelId }) {
-  const { data, error, loading } = useFetch(`/hotels/room/${hotelId}`);
+  const { data, error, loading } = useFetch(`https://reservationapi.onrender.com/hotels/room/${hotelId}`);
   const [selectedRooms, setSelectedRooms] = useState([]);
 
   const { dates } = useContext(SearchContext);
