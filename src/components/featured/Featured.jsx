@@ -3,7 +3,7 @@ import "./featured.css";
 
 const Featured = () => {
   const { data, error, loading } = useFetch(
-    "/hotels/countByCity?cities=Accra,Kumasi,CapeCoast"
+    "https://reservationapi.onrender.com/hotels/countByCity?cities=Accra,Kumasi,CapeCoast"
   );
 
   return (
